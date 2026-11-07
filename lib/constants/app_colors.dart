@@ -37,4 +37,10 @@ abstract class AppColors {
   static const Color walletCyan = Colors.cyan;
   static const Color successIcon = Color(0xFF2E7D32);
   static const Color warningIcon = Color(0xFFFBC02D);
+
+  // Saku Card Backgrounds
+  static const Color sakuHajiBg = Color(0xFFFCFDF2);
+  static const Color sakuTuaBg = Color(0xFFFBF2FF);
+  static const Color sakuKesehatanBg = Color(0xFFD4FDE1);
+  static const Color sakuDaruratBg = Color(0xFFFFF9CB);
 }

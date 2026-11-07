@@ -152,4 +152,66 @@ abstract class StaticData {
     FilterOptionModel(days: 14, label: '14 Hari Terakhir'),
     FilterOptionModel(days: 30, label: '30 Hari Terakhir'),
   ];
+
+  // Saku Screen Data
+  static const String totalSakuBalance = 'Rp 11.000.000';
+
+  static const List<SakuItemModel> sakuItems = [
+    SakuItemModel(id: 'saku_add', isAddButton: true),
+    SakuItemModel(
+      id: 'saku_1',
+      title: 'Ibadah Haji',
+      amount: 'Rp 5.000.000',
+      emoji: '🕋',
+      backgroundColor: AppColors.sakuHajiBg,
+    ),
+    SakuItemModel(
+      id: 'saku_2',
+      title: 'Tabungan Hari Tua',
+      amount: 'Rp 1.000.000',
+      emoji: '👴',
+      backgroundColor: AppColors.sakuTuaBg,
+    ),
+    SakuItemModel(
+      id: 'saku_3',
+      title: 'Kesehatan',
+      amount: 'Rp 3.000.000',
+      emoji: '🏥',
+      backgroundColor: AppColors.sakuKesehatanBg,
+    ),
+    SakuItemModel(
+      id: 'saku_4',
+      title: 'Tabungan Darurat',
+      amount: 'Rp 2.000.000',
+      emoji: '⚠️',
+      backgroundColor: AppColors.sakuDaruratBg,
+    ),
+  ];
+
+  static const List<DepositoItemModel> depositoItems = [
+    DepositoItemModel(
+      id: 'deposito_1',
+      interestRate: '8% p.a.',
+      duration: '12 Bulan',
+    ),
+    DepositoItemModel(
+      id: 'deposito_2',
+      interestRate: '7% p.a.',
+      duration: '6 Bulan',
+    ),
+    DepositoItemModel(
+      id: 'deposito_3',
+      interestRate: '6% p.a.',
+      duration: '3 Bulan',
+    ),
+  ];
+
+  static const ExtraBungaBannerModel extraBungaBanner = ExtraBungaBannerModel(
+    id: 'extra_bunga_1',
+    title: 'Buka Tabungan dengan Extra Bunga',
+    subtitle: 'Nabung otomatis setiap hari tanpa repot manual',
+    scheduleInfo: 'Auto debt jam 6 Pagi',
+    interestRate: '5% p.a.',
+    imageAsset: AppAssets.piggyBank,
+  );
 }

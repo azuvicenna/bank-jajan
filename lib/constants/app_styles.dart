@@ -162,4 +162,79 @@ abstract class AppStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.textPrimary,
   );
+
+  // Saku Screen Specifics
+  static const TextStyle sakuHeaderTitle = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle sakuTotalLabel = TextStyle(
+    fontSize: 14.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle sakuTotalAmount = TextStyle(
+    fontSize: 14.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle sakuAddButtonLabel = TextStyle(
+    color: AppColors.primary,
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const TextStyle sakuItemTitle = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle sakuItemAmount = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle depositoRate = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.primary,
+  );
+
+  static const TextStyle depositoDuration = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle depositoButtonLabel = TextStyle(
+    fontSize: 9.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textWhite,
+  );
+
+  static const TextStyle extraBungaTitle = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle extraBungaSubtitle = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textSecondary,
+  );
+
+  static const TextStyle extraBungaSchedule = TextStyle(
+    fontSize: 8.0,
+    color: AppColors.primary,
+  );
+
+  static const TextStyle extraBungaRate = TextStyle(
+    fontSize: 14.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.primary,
+  );
 }

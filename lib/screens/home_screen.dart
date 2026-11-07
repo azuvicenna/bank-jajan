@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:bank_jajan/constants/app_colors.dart';
 import 'package:bank_jajan/data/static_data.dart';
 import 'package:bank_jajan/screens/history_screen.dart';
+import 'package:bank_jajan/screens/saku_screen.dart';
 import 'package:bank_jajan/widgets/common/category_menu_item.dart';
 import 'package:bank_jajan/widgets/common/custom_bottom_nav_bar.dart';
 import 'package:bank_jajan/widgets/home/ewallet_card.dart';
@@ -38,7 +39,12 @@ class _HomeScreenState extends State<HomeScreen> {
               MainBalanceCard(
                 accountNumber: StaticData.accountNumber,
                 balance: StaticData.balance,
-                onTapSakuJajan: () {},
+                onTapSakuJajan: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SakuScreen()),
+                  );
+                },
               ),
 
               Container(
@@ -101,6 +107,11 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const HistoryScreen()),
+            );
+          } else if (index == 2) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const SakuScreen()),
             );
           }
         },

@@ -3,6 +3,9 @@ import 'package:heroicons/heroicons.dart';
 abstract class AppAssets {
   static const String imagePath = 'assets/images';
 
+  // Images
+  static const String piggyBank = '$imagePath/piggy_bank.png';
+
   // Heroicons - General & Home
   static const HeroIcons user = HeroIcons.user;
   static const HeroIcons notification = HeroIcons.bell;

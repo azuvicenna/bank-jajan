@@ -99,8 +99,53 @@ class FilterOptionModel {
   final int days;
   final String label;
 
-  const FilterOptionModel({
-    required this.days,
-    required this.label,
+  const FilterOptionModel({required this.days, required this.label});
+}
+
+class SakuItemModel {
+  final String id;
+  final bool isAddButton;
+  final String? title;
+  final String? amount;
+  final String? emoji;
+  final Color? backgroundColor;
+
+  const SakuItemModel({
+    required this.id,
+    this.isAddButton = false,
+    this.title,
+    this.amount,
+    this.emoji,
+    this.backgroundColor,
+  });
+}
+
+class DepositoItemModel {
+  final String id;
+  final String interestRate;
+  final String duration;
+
+  const DepositoItemModel({
+    required this.id,
+    required this.interestRate,
+    required this.duration,
+  });
+}
+
+class ExtraBungaBannerModel {
+  final String id;
+  final String title;
+  final String subtitle;
+  final String scheduleInfo;
+  final String interestRate;
+  final String? imageAsset;
+
+  const ExtraBungaBannerModel({
+    required this.id,
+    required this.title,
+    required this.subtitle,
+    required this.scheduleInfo,
+    required this.interestRate,
+    this.imageAsset,
   });
 }
