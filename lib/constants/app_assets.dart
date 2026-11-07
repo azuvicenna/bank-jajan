@@ -4,6 +4,7 @@ abstract class AppAssets {
   static const String imagePath = 'assets/images';
 
   // Images
+  static const String logo = '$imagePath/bank_jajan_logo.png';
   static const String piggyBank = '$imagePath/piggy_bank.png';
   static const String debitCardGreen = '$imagePath/debit_card_green.png';
 

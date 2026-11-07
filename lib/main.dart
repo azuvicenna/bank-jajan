@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bank_jajan/constants/app_colors.dart';
-import 'package:bank_jajan/screens/home_screen.dart';
+import 'package:bank_jajan/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.background,
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

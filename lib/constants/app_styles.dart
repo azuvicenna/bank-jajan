@@ -272,4 +272,18 @@ abstract class AppStyles {
     fontSize: 10.0,
     color: AppColors.textWhite,
   );
+
+  // Splash Screen Specifics
+  static const TextStyle splashDisclaimer = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textSecondary,
+    height: 1.5,
+  );
+
+  static const TextStyle splashBrandTitle = TextStyle(
+    fontSize: 24.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.primary,
+    letterSpacing: 0.5,
+  );
 }
