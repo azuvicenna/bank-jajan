@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:bank_jajan/constants/app_colors.dart';
 import 'package:bank_jajan/data/static_data.dart';
+import 'package:bank_jajan/screens/history_screen.dart';
 import 'package:bank_jajan/widgets/common/category_menu_item.dart';
 import 'package:bank_jajan/widgets/common/custom_bottom_nav_bar.dart';
 import 'package:bank_jajan/widgets/home/ewallet_card.dart';
@@ -90,9 +91,18 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: _currentNavIndex,
         onTap: (index) {
+          if (index == _currentNavIndex) return;
+
           setState(() {
             _currentNavIndex = index;
           });
+
+          if (index == 1) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const HistoryScreen()),
+            );
+          }
         },
         onQrScanTap: () {},
       ),

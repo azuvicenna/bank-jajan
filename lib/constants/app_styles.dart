@@ -105,4 +105,61 @@ abstract class AppStyles {
     fontWeight: FontWeight.normal,
     color: AppColors.textSecondary,
   );
+
+  // Transaction History Specifics
+  static const TextStyle historyHeaderTitle = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textWhite,
+  );
+
+  static const TextStyle filterHeading = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle filterOption = TextStyle(
+    fontSize: 10,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle dateLabel = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle datePlaceholder = TextStyle(
+    fontSize: 11,
+    color: AppColors.textSecondary,
+  );
+
+  static const TextStyle dateText = TextStyle(
+    fontSize: 11,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle transactionTitle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle transactionSubtitle = TextStyle(
+    fontSize: 10,
+    color: AppColors.textSecondary,
+  );
+
+  static const TextStyle transactionAmountIncome = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: AppColors.incomeAmount,
+  );
+
+  static const TextStyle transactionAmountExpense = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
 }

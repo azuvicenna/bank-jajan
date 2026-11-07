@@ -35,21 +35,13 @@ abstract class StaticData {
       icon: AppAssets.foreignExchange,
       label: 'Valuta Asing',
     ),
-    CategoryMenuItemModel(
-      id: 'cat_6',
-      icon: AppAssets.loan,
-      label: 'Pinjaman',
-    ),
+    CategoryMenuItemModel(id: 'cat_6', icon: AppAssets.loan, label: 'Pinjaman'),
     CategoryMenuItemModel(
       id: 'cat_7',
       icon: AppAssets.electricity,
       label: 'Listrik',
     ),
-    CategoryMenuItemModel(
-      id: 'cat_8',
-      icon: AppAssets.water,
-      label: 'PDAM',
-    ),
+    CategoryMenuItemModel(id: 'cat_8', icon: AppAssets.water, label: 'PDAM'),
   ];
 
   // Main balance action buttons
@@ -69,11 +61,7 @@ abstract class StaticData {
       icon: AppAssets.phone,
       label: 'Pulsa & Data',
     ),
-    QuickActionItem(
-      id: 'action_va',
-      icon: AppAssets.qrCode,
-      label: 'VA',
-    ),
+    QuickActionItem(id: 'action_va', icon: AppAssets.qrCode, label: 'VA'),
   ];
 
   // Connected & Available E-Wallets
@@ -114,5 +102,54 @@ abstract class StaticData {
     SpotlightItem(id: 'spot_1', icon: AppAssets.photo),
     SpotlightItem(id: 'spot_2', icon: AppAssets.photo),
     SpotlightItem(id: 'spot_3', icon: AppAssets.photo),
+  ];
+
+  // Transaction History Dummy Data
+  static const List<TransactionGroupModel> transactionHistory = [
+    TransactionGroupModel(
+      monthYear: 'Oktober 2026',
+      transactions: [
+        TransactionItemModel(
+          id: 'trx_1',
+          title: 'ATYLA AZFA AL HARITS',
+          date: '05 Okt, 17.19 WIB',
+          formattedAmount: '+Rp 70.000,00',
+          isIncome: true,
+        ),
+        TransactionItemModel(
+          id: 'trx_2',
+          title: 'My Telkomsel Apps',
+          date: '05 Okt, 17.19 WIB',
+          formattedAmount: '-Rp 70.000,00',
+          isIncome: false,
+        ),
+      ],
+    ),
+    TransactionGroupModel(
+      monthYear: 'September 2026',
+      transactions: [
+        TransactionItemModel(
+          id: 'trx_3',
+          title: 'ATYLA AZFA AL HARITS',
+          date: '05 Sep, 17.19 WIB',
+          formattedAmount: '+Rp 70.000,00',
+          isIncome: true,
+        ),
+        TransactionItemModel(
+          id: 'trx_4',
+          title: 'My Telkomsel Apps',
+          date: '05 Sep, 17.19 WIB',
+          formattedAmount: '-Rp 70.000,00',
+          isIncome: false,
+        ),
+      ],
+    ),
+  ];
+
+  // History Filter Days Options
+  static const List<FilterOptionModel> historyFilterDays = [
+    FilterOptionModel(days: 7, label: '7 Hari Terakhir'),
+    FilterOptionModel(days: 14, label: '14 Hari Terakhir'),
+    FilterOptionModel(days: 30, label: '30 Hari Terakhir'),
   ];
 }

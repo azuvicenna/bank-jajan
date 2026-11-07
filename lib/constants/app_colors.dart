@@ -14,6 +14,11 @@ abstract class AppColors {
   static const Color grey100 = Color(0xFFF5F5F5);
   static const Color avatarBackground = Color(0xFFE0E0E0);
 
+  // Transaction specifics
+  static const Color incomeBackground = Color(0xFFE8F5E9);
+  static const Color expenseBackground = Color(0xFFFFF8E1);
+  static const Color incomeAmount = Color(0xFF2E7D32);
+
   // Border & Line colors
   static const Color border = Color(0xFFEEEEEE);
   static const Color borderGrey = Color(0xFFE0E0E0);
@@ -30,4 +35,6 @@ abstract class AppColors {
   static const Color iconDark = Color(0xDD000000);
   static const Color walletBlue = Colors.blue;
   static const Color walletCyan = Colors.cyan;
+  static const Color successIcon = Color(0xFF2E7D32);
+  static const Color warningIcon = Color(0xFFFBC02D);
 }
