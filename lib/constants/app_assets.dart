@@ -5,6 +5,7 @@ abstract class AppAssets {
 
   // Images
   static const String piggyBank = '$imagePath/piggy_bank.png';
+  static const String debitCardGreen = '$imagePath/debit_card_green.png';
 
   // Heroicons - General & Home
   static const HeroIcons user = HeroIcons.user;

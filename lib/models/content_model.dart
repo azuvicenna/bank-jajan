@@ -149,3 +149,19 @@ class ExtraBungaBannerModel {
     this.imageAsset,
   });
 }
+
+class DebitCardItemModel {
+  final String id;
+  final String cardNumberSummary;
+  final String cardHolderName;
+  final String balance;
+  final String assetPath;
+
+  const DebitCardItemModel({
+    required this.id,
+    required this.cardNumberSummary,
+    required this.cardHolderName,
+    required this.balance,
+    required this.assetPath,
+  });
+}

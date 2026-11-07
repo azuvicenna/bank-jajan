@@ -237,4 +237,39 @@ abstract class AppStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.primary,
   );
+
+  // Cards Screen Specifics
+  static const TextStyle cardsHeaderTitle = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle cardTileTitle = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle cardFieldLabel = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textSecondary,
+  );
+
+  static const TextStyle cardHolderValue = TextStyle(
+    fontSize: 10.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle cardBalanceValue = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static const TextStyle cardDetailButtonLabel = TextStyle(
+    fontSize: 10.0,
+    color: AppColors.textWhite,
+  );
 }

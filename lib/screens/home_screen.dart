@@ -4,6 +4,7 @@ import 'package:bank_jajan/constants/app_colors.dart';
 import 'package:bank_jajan/data/static_data.dart';
 import 'package:bank_jajan/screens/history_screen.dart';
 import 'package:bank_jajan/screens/saku_screen.dart';
+import 'package:bank_jajan/screens/cards_screen.dart';
 import 'package:bank_jajan/widgets/common/category_menu_item.dart';
 import 'package:bank_jajan/widgets/common/custom_bottom_nav_bar.dart';
 import 'package:bank_jajan/widgets/home/ewallet_card.dart';
@@ -112,6 +113,11 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const SakuScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const CardsScreen()),
             );
           }
         },

@@ -5,6 +5,7 @@ import 'package:bank_jajan/constants/app_styles.dart';
 import 'package:bank_jajan/data/static_data.dart';
 import 'package:bank_jajan/screens/home_screen.dart';
 import 'package:bank_jajan/screens/saku_screen.dart';
+import 'package:bank_jajan/screens/cards_screen.dart';
 import 'package:bank_jajan/widgets/common/custom_bottom_nav_bar.dart';
 import 'package:bank_jajan/widgets/history/history_header.dart';
 import 'package:bank_jajan/widgets/history/transaction_filter_card.dart';
@@ -97,6 +98,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const SakuScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const CardsScreen()),
             );
           }
         },

@@ -214,4 +214,21 @@ abstract class StaticData {
     interestRate: '5% p.a.',
     imageAsset: AppAssets.piggyBank,
   );
+
+  static const List<DebitCardItemModel> debitCards = [
+    DebitCardItemModel(
+      id: 'card_1',
+      cardNumberSummary: '00881*****73001',
+      cardHolderName: 'Atyla Azfa Al Harits',
+      balance: 'Rp 1.000.000',
+      assetPath: AppAssets.debitCardGreen,
+    ),
+    DebitCardItemModel(
+      id: 'card_2',
+      cardNumberSummary: '00881*****73001',
+      cardHolderName: 'Atyla Azfa Al Harits',
+      balance: 'Rp 1.000.000',
+      assetPath: AppAssets.debitCardGreen,
+    ),
+  ];
 }

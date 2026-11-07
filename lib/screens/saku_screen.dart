@@ -5,6 +5,7 @@ import 'package:bank_jajan/constants/app_styles.dart';
 import 'package:bank_jajan/data/static_data.dart';
 import 'package:bank_jajan/screens/history_screen.dart';
 import 'package:bank_jajan/screens/home_screen.dart';
+import 'package:bank_jajan/screens/cards_screen.dart';
 import 'package:bank_jajan/widgets/common/custom_bottom_nav_bar.dart';
 import 'package:bank_jajan/widgets/saku/deposito_card.dart';
 import 'package:bank_jajan/widgets/saku/extra_bunga_banner.dart';
@@ -106,6 +107,11 @@ class _SakuScreenState extends State<SakuScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => const HistoryScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const CardsScreen()),
             );
           }
         },
